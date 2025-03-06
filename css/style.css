@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--main_color);
+}
+:root{
+    --white: rgb(255,255,255);
+    --red: rgb(255,0,0);
+    --main_color: #030121;
+    --font: "Poppins", sans-serif;
+    --grey: #bcbaba;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    height: 230px;
+    background-image: url('../img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+}
+.navigation_bar{
+    margin-top: 16px;
+    height: 56px;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+    width: 80px;
+}
+
+
+.nav{
+    justify-content: end;
+}
+.nav li{
+    float: left;
+    padding: 6px 20px;
+}
+
+.contact_us a{
+    background-color: var(--red);
+    padding: 6px 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font);
+    font-weight: 500;
+}
+
+.first_section{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.glow_bg{
+    background-image: url(../img/Ellipse\ 9.png);
+    background-repeat: no-repeat;
+    width: 90%;
+    background-size: contain;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    margin-inline: auto; 
+    z-index: -1;
+}
+
+.nero_image{
+    width: 350px;
+    height: auto;
+    margin-top: -80px;
+}
+
+
+.input_box{
+    width: 600px;
+    background-color: #f0f0f031;
+    margin: 0 auto;
+    border: 1px solid var(--white);
+    padding: 10px 0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    text-align: end;
+}
+.copy_btn{
+    padding: 8px 15px;
+    border: none;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.copy_btn:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font);
+    color: rgb(232, 224, 224);
+    outline: none;
+}
+
+.input::placeholder{
+    color: var(--grey);
+}
+.title_text{
+    font-size: 56px;
+    font-family: var(--font);
+    font-weight: 700;
+    color: var(--white);
+    margin: 36px 0;
+}
+
+.para{
+    font-family: var(--font);
+    font-size: 24px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--grey);
+}
+
+
+.about_section{
+    display: flex;
+    min-height: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #1C0A23;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+}
+.subtitle{
+    color: var(--grey);
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 500;
+}
+.about{
+    width: 60%;
+}
+.title{
+    font-size: 56px;
+    font-family: var(--font);
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.paragraph{
+    width: 70%;
+    color: var(--grey);
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.utility_section{
+    width: 80%;
+    min-height: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px){
+    .header{
+        background-size: cover;
+    }
+    .nav{
+        justify-content: center;
+    }
+    .nav li{
+        padding: 6px 10px;
+    }
+
+    .navigation_bar{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        text-align: center;
+    }
+    .nav li a{
+        font-size: 12px;
+    }
+    .glow_bg{
+        scale: 2;
+        top: 466px;
+    }
+    .nero_image{
+        margin-top: -50px;
+    }
+    .input_box{
+        width: 90%;
+        padding: 10px 15px;
+    }
+    .first_section{
+        width: 90%;
+    }
+    .title_text{
+        font-size: 40px;
+    }
+    .para{
+        width: 100%;
+        font-size: 20px;
+    }
+    .about{
+        width: 100%;
+    }
+    .subtitle{
+        margin-top: 80px;
+    }
+    .paragraph{
+        width: 100%;
+    }
+    .utility_section{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 412px){
+    .glow_bg{
+        top: 450px;
+    }
+    .input_box{
+        width: 100%;
+    }
+    .button{
+        text-align: center;
+    }
+}
